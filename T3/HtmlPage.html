@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        console.log("对象：" + Boolean(new Object()))
+        console.log("空字符串："+Boolean(""))
+        console.log("非空字符串："+Boolean("非空字符串"))
+        console.log("操作数是0:" + Boolean(0))
+        console.log("非0数字：" + Boolean(45))
+        console.log("操作数是Infinity：" + Boolean(Infinity))
+        console.log("操作数是null：" + Boolean(null))
+        console.log("操作数是NaN：" + Boolean(NaN))
+        console.log("操作数是undefined：" + Boolean(undefined))
+        console.log("---------")
+        console.log("undefined与null比较== :" + (undefined == null))
+        console.log("undefined与null比较=== :" + (undefined === null))
+        console.log("undefined与undefined的类型比较:" + (typeof undefined === typeof null))
+        console.log("null与null比较:" + (null === null))
+        var s = document.getElementById("#a");
+        console.log("undefined赋值给s比较:" + (s === undefined))
+
+        console.log("---------")
+        var obj = new Object();
+        obj.name = "myName";
+        console.log(obj.name)
+        console.log(obj["name"])
+        console.log("---------")
+        var bigObj = { obj ,obj3:1}
+        console.log("bigObj属性的name属性bigObj.obj.name" + bigObj.obj.name);
+        console.log("新对象的name属性bigObj[‘obj’].name" + bigObj["obj"].name);
+        console.log("新对象是否存在obj" + Boolean(bigObj["obj"]));
+        console.log("新对象是否存在obj" + Boolean(bigObj["obj"].name));
+        console.log("新对象是否存在obj2" + Boolean(bigObj["obj2"]));
+        console.log("新对象是否存在obj3,其中obj3已定义" + Boolean(bigObj["obj3"]));
+        console.log("新对象是否存在obj4" + Boolean(bigObj["obj4"]));
+        //json
+    </script>
+    <!--Boolean(false) // false
+    Boolean(undefined) // false
+    Boolean(null) // false
+    Boolean(0) // false
+    Boolean(NaN) // false
+    Boolean('') // false-->
+</body>
+</html>

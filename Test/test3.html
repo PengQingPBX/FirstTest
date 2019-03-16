@@ -1,0 +1,45 @@
+﻿<!--<!doctype html>
+<html ng-app="spicyApp1">
+<head>
+    <script src="http://code.angularjs.org/1.2.25/angular.min.js"></script>
+    <script src="js/JavaScript.js"></script>
+</head>
+<body>
+    <div ng-app="spicyApp1" ng-controller="SpicyCtrl">
+        <button ng-click="chiliSpicy()">Chili</button>
+        <button ng-click="jalapenoSpicy()">Jalapeño</button>
+        <p>The food is  spicy!</p>
+    </div>
+
+</body>
+</html>-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> 测试页 </title>
+    <meta charset="utf-8">
+    <script src="http://www.hubwiz.com/scripts/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="" ng-controller="Controller_test">
+        Your name:
+        <input type="text" ng-model="username">
+        <button ng-click="sayHi()">打招呼</button>
+        <hr />
+        {{greeting}}
+    </div>
+
+    <script>
+        function Controller_test($scope) {
+            $scope.username = 'chr';
+            $scope.sayHi = function () {
+                $scope.greeting = 'Hi ' + $scope.username + '!';
+            };
+        }
+    </script>
+    <div style="background-color:red"></div>
+</body>
+</html>
+
+
